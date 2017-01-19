@@ -22,3 +22,24 @@
 .color_fix {
     color: white;
 }
+
+/* CSS for About Page */
+header {
+	margin-top: 20px;
+	text-align: center;
+}
+
+ul {
+	display: table;
+	margin: 0 auto;
+}
+
+.about_div {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: lightblue;
+	border: 3px solid pink;
+	text-align: center;
+	width: 50%;
+	margin: 0 auto; 
+}

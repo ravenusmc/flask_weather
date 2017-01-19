@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<nav class="navbar navbar-dark bg-inverse">
+  <ul class="nav navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/entry">Page One</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="/about">About me</a>
+    </li>
+  </ul>
+</nav>
+
+<header>
+    <h1>ABOUT ME</h1>
+</header>
+
+<main>
+    <div class='about_div'>
+        <ul>
+            <li>I am a junior web/data science developer</li>
+            <li>In High school I tracked the weather for 3.5 years.</li>
+            <li>Besides building websites, I love doing data science projects</li>
+        </ul>
+    </div>
+</main>
+
+
+{% endblock %}
