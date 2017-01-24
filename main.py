@@ -10,6 +10,10 @@ app = Flask(__name__)
 def index():
     return render_template('index.html', title='Home Page')
 
+@app.route('/basic')
+def basic_page():
+    return render_template('basic.html', title='Basic Info Page')
+
 @app.route('/about')
 def about():
     return render_template('about.html', title='About Me')
