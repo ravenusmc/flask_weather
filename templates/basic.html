@@ -2,25 +2,39 @@
 
 {% block body %}
 
-<nav class="navbar navbar-dark bg-inverse">
-  <ul class="nav navbar-nav">
-    <li class="nav-item active">
-      <a class="nav-link" href="/">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="/basic">Basic Information</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="/about">About me</a>
-    </li>
-  </ul>
-</nav>
+<div class='wrapper'>
 
-<header>
-    <h1>Basic Information Page</h1>
-</header>
+    <nav class="navbar navbar-dark bg-inverse">
+      <ul class="nav navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/basic">Basic Information</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About me</a>
+        </li>
+      </ul>
+    </nav>
 
-<p>hello</p>
+    <header>
+        <h1>Basic Information</h1>
+    </header>
+
+    <main class='main_basic'>
+        <h3 class='center'>Purpose</h3>
+        <p class='center'>This page will provide the user with basic information about the
+        weather data.</p>
+        <ul>
+            <li>Daily Mean Temperature: </li>
+            <li>Daily Mean High Temperature: </li>
+            <li>Daily Mean Low Temperature: </li>
+            <li>Daily Mean Precipitation: </li>
+        </ul>
+    </main>
+
+</div>
 
 
 {% endblock %}

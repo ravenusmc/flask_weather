@@ -1,3 +1,10 @@
+/* Generic CSS */
+
+.center {
+	text-align: center;
+}
+
+
 /* CSS for Index Page */
 
 .jumbotron {
@@ -23,6 +30,16 @@
     color: white;
 }
 
+/* CSS for Basic Page */
+
+/*.wrapper {
+	background-color: blue;
+}*/
+
+.main_basic {
+	margin-top: 25px;
+}
+
 /* CSS for About Page */
 header {
 	margin-top: 20px;
@@ -41,5 +58,5 @@ ul {
 	border: 3px solid pink;
 	text-align: center;
 	width: 50%;
-	margin: 0 auto; 
+	margin: 0 auto;
 }
