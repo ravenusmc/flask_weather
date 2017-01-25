@@ -1,5 +1,9 @@
 #This is the main file for the project.
 
+import pandas as pd
+import numpy as np
+from basic import *
+
 #importing all files
 from flask import Flask, render_template, request
 
@@ -12,6 +16,11 @@ def index():
 
 @app.route('/basic')
 def basic_page():
+    weather = Weather()
+    #data.top_part()
+    top = weather._Weather__data.head()
+    # data = pd.read_csv('weather.csv')
+    # test = data.head()
     return render_template('basic.html', title='Basic Info Page')
 
 @app.route('/about')
