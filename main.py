@@ -14,14 +14,15 @@ app = Flask(__name__)
 def index():
     return render_template('index.html', title='Home Page')
 
-@app.route('/basic')
+@app.route('/basic_weather')
 def basic_page():
     weather = Weather()
-    #data.top_part()
-    top = weather._Weather__data.head()
-    # data = pd.read_csv('weather.csv')
-    # test = data.head()
-    return render_template('basic.html', title='Basic Info Page')
+    mean = weather.get_mean_temp()
+    high_mean = weather.get_mean_high_temp()
+    low_mean = weather.get_mean_low_temp()
+    rain_mean = weather.get_mean_rain()
+    return render_template('basic_weather.html', title='Basic Weather Page', one = mean, two = high_mean,
+    three = low_mean, four = rain_mean)
 
 @app.route('/about')
 def about():

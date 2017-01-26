@@ -4,7 +4,8 @@
 The purpose of this project is to work with flask so that I may better
 understand it. The goal of this project is to attempt to use some csv files
 in it to see what I can start doing in regards to data science. We will
-see how this turns out!
+see how this turns out! The weather data is for Charlotte, NC. It was also pulled
+from the 538 github repo.
 
 
 # Getting started

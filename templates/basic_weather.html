@@ -10,7 +10,7 @@
           <a class="nav-link" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/basic">Basic Information</a>
+          <a class="nav-link" href="/basic_weather">Basic Information</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/about">About me</a>
@@ -19,7 +19,7 @@
     </nav>
 
     <header>
-        <h1>Basic Information</h1>
+        <h1>Basic Information for Charlotte, NC</h1>
     </header>
 
     <main class='main_basic'>
@@ -27,14 +27,12 @@
         <p class='center'>This page will provide the user with basic information about the
         weather data.</p>
         <ul>
-            <li>Daily Mean Temperature: </li>
-            <li>Daily Mean High Temperature: </li>
-            <li>Daily Mean Low Temperature: </li>
-            <li>Daily Mean Precipitation: </li>
+            <li>Daily Mean Temperature: {{ one }} </li>
+            <li>Daily Mean High Temperature: {{ two }} </li>
+            <li>Daily Mean Low Temperature: {{ three }} </li>
+            <li>Daily Mean Precipitation: {{ four }} </li>
         </ul>
     </main>
-
-    <h1>Weather: {{weather}}</h1>
 
 </div>
 
